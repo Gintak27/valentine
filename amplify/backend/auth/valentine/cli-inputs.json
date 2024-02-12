@@ -1,0 +1,12 @@
+{
+  "version": "1",
+  "cognitoConfig": {
+    "identityPoolName": "valentine_identitypool_8b34a178",
+    "allowUnauthenticatedIdentities": true,
+    "authSelections": "identityPoolOnly",
+    "resourceName": "valentine",
+    "sharedId": "8b34a178",
+    "serviceName": "Cognito",
+    "useDefault": "manual"
+  }
+}

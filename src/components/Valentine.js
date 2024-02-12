@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import { Container, Box, Card, Button, Grid } from '@mui/material';
+import { record } from 'aws-amplify/analytics';
 import './Valentine.css';
 
 
@@ -21,6 +22,9 @@ const Valentine = () => {
     };
 
     const handleButtonClick = () => {
+        record({
+            name: 'albumVisit',
+          });
         setButtonClicked('yes');
     };
 
